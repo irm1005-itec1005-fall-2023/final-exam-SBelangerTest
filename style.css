@@ -28,16 +28,178 @@
  * }
  */
 
- html {
+ @font-face {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  src: url('./Users/santiagobelanger/Downloads/final-exam-SBelangerTest-main/GillSans.ttc') format('truetype');
+}
+
+html {
   font-size: 1.0rem;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-
-  background-color: #f7ead7;
+  background-color: #ff8157;
+  font-family: 'GillSans', sans-serif;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  margin: 2rem;
+  background-color: #f7f6ee;
+  box-shadow: 0px 0px 1rem -10px black;
+  border-color: black;
+  border-radius: 3rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.logo {
+  grid-column-start: 1;  
+  margin: 2rem;
+  display: grid;
+  background-color: black;
+  padding: 1.55rem;
+  border-radius: 1rem;
+}
+
+.contact {
+background-color: black;
+color: #d2d2d2;
+border-color: black;
+padding: 2rem;
+margin: 2rem;
+grid-column-start: 3;
+border-radius: 1rem;
+border-style: dashed;
+display: grid;
+text-align: center;
+}
+
+h2 {
+  font-size: larger;
+  font-weight: lighter;
+  margin: 2rem;
+  margin-right: -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  grid-column-start: 2;
+}
+
+h1 {
+  padding-top: 3rem;
+  font-size: 6.5rem;
+  margin: 2rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 6.4rem;
+  color: #f7f6ee;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  margin: 2rem;
+  font-weight:lighter;
+  text-align: left;
+  line-height: 2rem;
+  color: #f7f6ee;
+}
+
+.skills {
+  display: flex;
+  background-color: #f7f6ee;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2rem;
+  padding: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 1rem -10px black;
+}
+
+.WD {
+  background-color: #49B1D9;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+  box-shadow: 0px 0px 1rem -10px black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fun-flex-item:hover {
+  transform: scale(1.1);
+}
+
+.UU {
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 1rem -10px black;
+  font-weight: bolder;
+  transition: transform 0.3s ease-in-out;
+  background-color: #FFAA4E;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.CS {
+  display: flexbox;
+  background-color: #6149af;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 1rem -10px black;
+  transition: transform 0.3s ease-in-out;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.JS {
+  display: flexbox;
+  font-weight: bolder;
+  background-color: #46E380;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 1rem -10px black;
+  transition: transform 0.3s ease-in-out;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.GH {
+  display: flexbox;
+  background-color: #f64c4c;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  box-shadow: 0px 0px 1rem -10px black;
+  transition: transform 0.3s ease-in-out;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.HT {
+  display: flexbox;
+  font-weight: bolder;
+  background-color: #f04ad7;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 1rem -10px black;
+  transition: transform 0.3s ease-in-out;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
 /*
  * SR-ONLY
  */
@@ -58,12 +220,167 @@ body {
  * SHARED STYLES
  */
 
-.page-container {
+.hero {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1.0rem;
 }
 
+.about {
+  background-color: #f7f6ee;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0fr 0fr 0fr;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 1rem -10px black;
+}
+
+.amy {
+  margin: 3rem;
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 10rem;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.AmyTitle {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  margin-right: 1rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+p {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin: 3rem;
+  margin-top: -1rem;
+  text-align: right;
+}
+
+.cm {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  background-color: black;
+  color: #d2d2d2;
+  border-color: black;
+  border-radius: 1rem;
+  margin-top: -1rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  border-style: dashed;
+  text-align: center;
+}
+
+.work {
+  display: grid;
+  background-color: #f7f6ee;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 1rem -10px black;
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+.T3 {
+  margin: 3rem;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.T5 {
+  margin: 3rem;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.T7 {
+  margin: 3rem;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.T9 {
+  margin: 3rem;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.w1 {
+  border-radius: 1rem;
+  min-height: max-content;
+}
+
+.w2 {
+  border-radius: 1rem;
+  min-height: max-content;
+}
+
+.w3 {
+  border-radius: 1rem;
+  min-height: max-content;
+}
+
+.w4 {
+  border-radius: 1rem;
+  min-height: max-content;
+}
+
+.book {
+  background-color: #f7f6ee;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0fr 0fr 0fr;
+  margin: 3rem;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 1rem -10px black;
+}
+
+.call {
+  text-align: left;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.chat {
+  text-align: left;
+}
+
+.footl {
+  margin: 2rem;
+  text-align: left;
+  align-items: center;
+}
+
+.legal {
+  text-align: right;
+  align-items: center;
+}
+
+footer {
+  padding-bottom: 2rem;
+  grid-template-rows: 1fr;
+}
 /*
  * ADD YOUR STYLES HERE
  */
+
+
