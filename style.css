@@ -232,6 +232,7 @@ h3 {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 0fr 0fr 0fr;
   margin-left: 2rem;
+  padding-bottom: 4rem;;
   margin-right: 2rem;
   margin-top: 5rem;
   border-radius: 4rem;
@@ -275,9 +276,9 @@ p {
   color: #d2d2d2;
   border-color: black;
   border-radius: 1rem;
-  margin-top: -1rem;
+  margin-top: 3rem;
   margin-right: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: -1rem;
   margin-left: 3rem;
   border-style: dashed;
   text-align: center;
@@ -287,11 +288,11 @@ p {
   display: grid;
   background-color: #f7f6ee;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: space-between;
+  grid-template-rows: 1fr 0fr;
+  justify-content: auto;
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   border-radius: 4rem;
   box-shadow: 0px 0px 1rem -10px black;
 }
@@ -366,18 +367,40 @@ h4 {
 
 .footl {
   margin: 2rem;
+  display: grid;
+  grid-row-start: 1;
   text-align: left;
   align-items: center;
 }
 
 .legal {
+  display: grid;
+  grid-row-start: 1;
+  margin-top: 2rem;
   text-align: right;
   align-items: center;
 }
 
 footer {
-  padding-bottom: 2rem;
+  margin: 2rem;
+  display: grid;
   grid-template-rows: 1fr;
+}
+
+.cm2 {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  background-color: black;
+  color: #d2d2d2;
+  border-color: black;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  border-style: dashed;
+  text-align: center;
 }
 /*
  * ADD YOUR STYLES HERE
